@@ -1,4 +1,3 @@
-from re import X
 from .base_page import BasePage
 from .locators import ProductPageLocators
 
