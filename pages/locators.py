@@ -16,3 +16,4 @@ class ProductPageLocators():
     BOOK_PRICE = (By.XPATH,"//*[@id='content_inner']/article/div[1]/div[2]/p[1]")
     BOOK_NAME = (By.XPATH,'//*[@id="content_inner"]/article/div[1]/div[2]/h1')
     BOOK_NAME_IN_MESSAGE = (By.XPATH,'//*[@id="messages"]/div[1]/div/strong')
+    SUCCESS_MESSAGE = (By.XPATH,'//*[@id="messages"]/div[1]/div')

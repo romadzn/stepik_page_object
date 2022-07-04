@@ -23,3 +23,11 @@ class ProductPage(BasePage):
         print(name_book.text)
         print(name_in_message.text)
         assert name_book.text == name_in_message.text, "names not equal"
+
+    def is_not_success_message(self):
+        # проверяем что нет сообщения о добавлении в корзину товара
+        assert self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGE), "message is here"  
+
+    def is_dissapeared_success_message(self):  
+        # проверяем, что сообщение исчезает 
+        assert self.is_disappeared(*ProductPageLocators.SUCCESS_MESSAGE), "message not dissapeared"  
