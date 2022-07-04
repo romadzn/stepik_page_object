@@ -69,3 +69,8 @@ class BasePage():
     def should_be_login_link(self):
         # проверсяем есть ли на странице ссылка для авторизации
         assert self.is_element_present(*BasePageLocators.LOGIN_LINK), "Login link is not presented"
+
+    def go_to_basket(self):
+        # переход в корзину
+        basket = self.browser.find_element(*BasePageLocators.BASKET_LINK)
+        basket.click()    
